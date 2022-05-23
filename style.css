@@ -1,0 +1,197 @@
+
+h1, p {
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+#display {
+	color: white;
+	font-size: 2.9em;
+	top: 10px;
+  border-bottom: thin solid;
+  padding-bottom: 20px;
+  opacity: 0.80;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  position: relative;
+  z-index: 3;
+}
+
+#date {
+    color: white;
+    font-size: 1.3em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    position: relative;
+    z-index: 3;
+  }
+
+#gen {
+    outline: none;
+    padding-top: 5px;
+    text-decoration: none;
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+    border: thin solid white;
+    height: 40px;
+    width: 100px;
+    border-radius: 2px;
+    transition: 0.5s;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 4;
+  }
+
+#gen:hover {
+    background-color: white;
+    color: black;
+    border: thin solid black;
+    opacity: 0.8;
+  }
+  
+#gen a {
+    text-decoration: none;
+    
+  }
+
+  @keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+body {
+    display: block;
+    background: url("https://wallpapers.com/images/high/4k-space-eye-formation-unmdcbrhea9nngay.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgba(white, white, white, 0.1);
+    text-align: center;
+
+    font-family: sans-serif;
+
+    /* position: relative; */
+    z-index: 3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(24, 21, 21, .7);
+    align-items: center;
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar_item {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    width: 70px;
+    text-align: center;
+    border-radius: 30px;
+    align-items: flex-start;
+}
+
+.navbar_item:hover {
+    background-color: black;
+    border-radius: auto;
+    transition: 0.4s;
+    color: #fff;
+    width: 100%;
+}
+
+.navbar_menu .navbar_item a {
+    text-decoration: none;
+    color: rgb(236, 233, 233);
+    width: 100%;
+}
+
+#quoteDisplay{
+  font-weight: bolder;
+  font-size: x-large;
+  color: rgb(78, 161, 167);
+  position: relative;
+  z-index: 3;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* .planet {
+    background: url("https://wallpapers.com/images/high/4k-space-eye-formation-unmdcbrhea9nngay.jpg")no-repeat;
+    background: transparent;
+} */
+
+
+footer:before, footer:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding-top: 500px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+  .container3 {
+   position: relative;
+   width: 300px;
+   margin: 100px auto 0 auto;
+   perspective: 500px;
+  }
+  
+  .planet {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      animation: rotate360 60s infinite fowards linear;
+  }
+
+
+  
